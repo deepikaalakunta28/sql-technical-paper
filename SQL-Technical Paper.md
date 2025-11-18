@@ -1,19 +1,19 @@
 
-## **ACID**
+## ACID
 
-## ** Introduction**
+##  Introduction
 
 Databases are integral to modern computing across numerous domains, including finance, healthcare, e-commerce, telecommunications, and enterprise software. These systems routinely perform thousands to millions of operations per second, often from numerous concurrent users. Ensuring correctness in such an environment is non-trivial.
 
 ---
 
-## ** ACID Overview**
+## ACID Overview
 
 The ACID model ensures:
 
 | Property | Purpose |
 |---------|---------|
-| **Atomicity** | Guarantees all-or-nothing behavior of transactions |
+| **Atomicity**| Guarantees all-or-nothing behavior of transactions |
 | **Consistency** | Ensures transactions move the database from one valid state to another |
 | **Isolation** | Prevents concurrent transactions from interfering |
 | **Durability** | Guarantees that committed transactions persist even after system failure |
@@ -22,9 +22,9 @@ Together, these properties maintain data correctness even under heavy load, erro
 
 ---
 
-## ** Atomicity**
+## Atomicity
 
-### **Definition**
+### Definition
 Atomicity ensures that a transaction is treated as a single, indivisible operation. If **any** component of the transaction fails, **the entire transaction is rolled back**, leaving the database unchanged.
 
 ## Example
@@ -144,7 +144,7 @@ HAVING COUNT(*) > 5 AND AVG(salary) > 50000;
 ```
 # SQL Normalization
 
-## **1. Introduction**
+## 1. Introduction
 **Normalization** is the process of organizing a database to:
 1. Reduce data redundancy
 2. Avoid data anomalies (insert, update, delete anomalies)
@@ -154,7 +154,7 @@ Normalization divides data into **multiple related tables** and defines relation
 
 ---
 
-## **2. Normal Forms (NF)**
+## 2. Normal Forms (NF)
 ### Types of Normal Forms
 1)First Normal Form (1NF)
 2)Second Normal Form (2NF)
@@ -173,20 +173,20 @@ Student Table:
 ```
 # SQL Indexes
 
-## ** Introduction**
+## Introduction
 An **index** in SQL is a **database object** that improves the speed of data retrieval operations.  
 Think of it like an index in a book—it helps the database **find rows faster** without scanning the entire table.
 
 ---
 
-## **Benefits of Indexes**
+## Benefits of Indexes
 1. Speeds up **SELECT** queries with `WHERE`, `JOIN`, `ORDER BY`, or `GROUP BY`.
 2. Reduces **full table scans** for large tables.
 3. Helps enforce **uniqueness** using **unique indexes**.
 
 ---
 
-## **Types of Indexes**
+## Types of Indexes
 
 ### Single-Column Index
 - Created on a single column.
